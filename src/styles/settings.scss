@@ -1,0 +1,76 @@
+@import 'utils';
+
+// Colores
+$white: #fefefe;
+$gray: rgb(228, 228, 228);
+$darkgray: rgba(0, 0, 0, 0.54);
+$black: #1a1919;
+$blue: #166E96;
+$red: #f70000;
+$lightgray:rgba(0, 0, 0, 0.5);
+
+// Asignación de Colores
+$bg-color: $white;
+$secondary-background-color: $gray;
+$primary-color: $black;
+$secondary-color: $gray;
+$link-color: $blue;
+$border-color: $gray;
+$error: $red;
+$main-border-color: $black;
+$main-text-color: $black;
+$secondary-text-color: $gray;
+$main-button-color: $black;
+$search-text-color: $black;
+$main-menu-color: $black;
+$hover-background-color: $gray;
+
+// Sombras
+$box-shadow-default: 1px -5px 5px -5px $gray;
+
+// Fuentes
+$font-family: "Droid Serif", arial, sans-serif;
+
+// Asignación de fuentes
+$main-font-family: $font-family;
+$body-font-family: $main-font-family;
+
+// Tamaño de fuentes
+$font-size-base: 14;
+$font-size-small: $font-size-base - 5;
+$font-size-large: $font-size-base + 5;
+$font-size-h1: $font-size-base + 15;
+$font-size-h2: $font-size-base + 12;
+$font-size-h3: $font-size-base + 9;
+$font-size-h4: $font-size-base + 6;
+$font-size-h5: $font-size-base + 3;
+$font-size-h6: $font-size-base;
+
+$gutter-padding: 30px;
+
+// Breakpoints
+$mobile-portrait-width: 375px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+$tablet-width: 990px;   
+$desktop-width: 1200px; 
+$breakpoint-tablet-portrait: 600px;
+$breakpoint-tablet-landscape: 900px;
+$breakpoint-desktop: 1200px;
+
+// Alturas
+$header-height: 90px;
+$footer-height: 58px;
+$input-height: 35px;
+$textarea-height: 70px;
+
+// Form variables
+$form-input-border-color: $primary-color;
+$form-input-outline-color: $primary-color;
+$form-button-background-color: $primary-color;
+$form-button-font-color: $bg-color;
+$form-error-background-color: $bg-color;
+$form-error-font-color: $error;
+
+$main-vertical-separation: 15px;

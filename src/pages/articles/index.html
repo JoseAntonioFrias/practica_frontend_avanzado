@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head.ejs') %>
+</head>
+<body>
+  <%- include('../partials/header.ejs') %> 
+  <div class="container">
+      <%- include('../partials/search-engine.ejs') %>
+    <section class="articles-list">
+      <div class="web-title">
+        <h2>Los mejores artículos publicados</h2>
+      </div>
+      <div id="articlesContainer"></div>
+    </section>
+    <aside id="sidebar">
+      <section id="widget-1"></section>
+      <section id="widget-2"></section>
+    </aside>
+  </div>
+  <%- include('../partials/footer.ejs') %>
+</body>
+</html>

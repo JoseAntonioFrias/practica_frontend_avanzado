@@ -1,0 +1,76 @@
+@import '~styles/settings';
+@import '~styles/utils';
+
+#article-detail{
+  margin-top: 10px;
+
+  .article-detail-description{
+    padding: 30px;
+
+    .article-likes{
+      @include flex();
+      @include justify-content(flex-end);
+      margin-top: 20px;
+
+      button{
+        -webkit-appearance: none;
+        border: 0;
+        @include fontSize(30);
+      }
+    }
+  }
+
+  video{
+    width: 100%;
+  }
+
+  .title-container-detail {
+    padding: 20px;
+  }
+
+  @include for-tablet-portrait(){
+    .article-header{
+      @include grid();
+      grid-template-columns: 1fr 1fr;
+      background-color: $primary-color;
+      color: $white;
+      border-top: 1px solid $white;
+
+      .title-container-detail {
+        @include flex();
+        @include justify-content(center);
+        @include flex-direction(column);
+
+        h1{
+          border-bottom: 4px solid $white;
+        }
+
+        p{
+          @include fontSize(25);
+          font-style: italic;
+          color: $gray;
+          margin: 10px;
+        }
+
+      }
+
+    }
+
+    .article-detail-description{
+      padding: 50px;
+      text-align: justify;
+
+    }
+
+    .title-container-detail {
+      padding: 40px;
+    }
+  }
+
+  @include for-desktop(){
+    .title-container-detail {
+      padding: 50px;
+    }
+
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Frontend Avanzado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "deploy": "webpack --mode=production && cp CNAME dist/CNAME && surge dist",
+    "eslint": "eslint",
+    "start": "webpack-dev-server --mode=development --hot --inline",
+    "server": "json-server --watch --port=8000 ./src/data/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.keepcoding.io/BootcampWeb5-alumnos/03-Frontend-Avanzado-alumnos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "ejs": "^2.6.1",
+    "ejs-html-loader": "^3.1.0",
+    "eslint": "^5.5.0",
+    "eslint-plugin-import": "^2.14.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "animejs": "^2.2.0",
+    "babel-loader": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
+    "dotenv-webpack": "^1.5.7",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "json-server": "^0.14.2",
+    "pubsub-js": "^1.6.1",
+    "query-string": "5.0.0",
+    "webpack-plugin-critical": "^1.0.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

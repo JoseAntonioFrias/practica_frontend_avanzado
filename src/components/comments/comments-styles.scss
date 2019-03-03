@@ -1,0 +1,58 @@
+@import '~styles/settings.scss';
+@import '~styles/utils.scss';
+@import '~styles/responsive';
+
+.comments-container{
+  background-color: $gray;
+  padding: 50px;
+
+  .comments-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $primary-color;
+
+    .total-comments{
+      @include fontSize(22);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .comment{
+
+    padding: 30px;
+    border-bottom: 0.2px solid $lightgray;
+    .user-info{
+      @include flex();
+
+      img {
+        @include border-radius(50%);
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+      }
+
+      .user-info{
+        @include flex();
+        @include flex-direction(column);
+        @include justify-content(center);
+
+        .comment-autor-name{
+          font-weight: bold;
+        }
+
+        .comment-autor-email{
+          color: $darkgray;
+          font-style: italic;
+          margin: 0;
+        }
+
+      }
+
+    }
+  }
+
+}

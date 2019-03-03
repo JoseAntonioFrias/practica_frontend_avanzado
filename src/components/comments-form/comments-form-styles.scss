@@ -1,0 +1,50 @@
+.container-form{
+  margin-top: 30px;
+  padding: 50px;
+  .leave-a-comment{
+    @include fontSize(22);
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  #comment-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > div{
+      margin-top: 20px;
+    }
+    label{
+      @include fontSize(18);
+      margin-bottom: 5px;
+    }
+    input, textarea{
+      width: 100%;
+      padding: 20px;
+      border: 1px solid $lightgray;
+    }
+
+    input[type="submit"]{
+      margin-top: 20px;
+
+      &:hover{
+        background-color: $primary-color;
+        color: $white;
+      }
+
+    }
+  }
+
+  @include for-desktop(){
+    #comment-form {
+      input[type="submit"] {
+        width: 50%;
+        align-self: flex-end;
+      }
+    }
+  }
+
+}
+

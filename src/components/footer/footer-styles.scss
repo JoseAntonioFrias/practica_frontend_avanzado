@@ -1,0 +1,87 @@
+@import '~styles/settings';
+
+footer{
+  background-color: $primary-color;
+  color: $white;
+  text-align: center;
+  padding: 50px;
+
+  > div p{
+    font-weight: bold;
+    @include fontSize(18);
+    border-bottom: 1px solid $gray;
+  }
+  .menu{
+    li{
+      list-style: none;
+      padding-bottom: 5px;
+
+    }
+    a{
+      color: $white;
+    }
+  }
+
+  .links-container{
+    i{
+      color: $white;
+      @include fontSize(28);
+      margin-right: 15px;
+    }
+  }
+
+  input{
+    background-color: transparent;
+    border: 1px solid $white;
+    color:$white;
+    width: 100%;
+    padding: 20px;
+
+    &[type="email"]::placeholder {
+      color:$white;
+    }
+
+    &[type="submit"]{
+      font-weight: bold;
+      background-color: $secondary-color;
+      color: $primary-color;
+      &:hover{
+        background-color: $white;
+        color: $primary-color;
+      }
+    }
+
+  }
+
+  @include for-tablet-portrait(){
+    @include grid();
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+
+    > div {
+      @include flex();
+      @include flex-direction(column);
+      padding: 10px;
+    }
+  }
+
+  @include for-desktop(){
+    @include grid();
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+}
+#scroll-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid $white;
+}

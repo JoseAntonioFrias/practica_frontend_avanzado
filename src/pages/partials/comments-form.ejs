@@ -1,0 +1,22 @@
+<div class="container-form comment-form-wrapper">
+  <div class="leave-a-comment">Deja tu comentario</div>
+  <form id="comment-form">
+    <div class="comment-form-field">
+      <input class="comment-input" type="hidden" id="comment-form-id-article" name="id_article" value="">
+    </div>
+    <div class="comment-form-field">
+      <label for="name">Nombre *</label>
+      <input class="comment-input" type="text" name="name" id="comment-form-name" required>
+    </div>
+    <div class="comment-form-field">
+      <label for="email">Email *</label>
+      <input class="comment-input" type="email" name="email" id="comment-form-email" required>
+    </div>
+    <div class="comment-form-field comment-textarea">
+      <label for="comment">Comentario *</label>
+      <textarea class="comment-input" name="comment" id="comment-form-message" required maxlength="500" placeholder="Escribe un mensaje de no más de 500 caracteres"></textarea>
+    </div>
+    <input type="submit" value="Submit" id="comment-form-submit" />
+  </form>
+  <div id="notice"></div>
+</div>

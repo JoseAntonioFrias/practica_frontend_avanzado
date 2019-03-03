@@ -1,0 +1,44 @@
+.search-engine-container-form{
+    margin-top: 10px;
+    padding: 20px;
+    border: 0.5px $primary-color solid;
+    background-color: $secondary-background-color;
+    
+    #search-engine-form{
+        @include flex();
+        @include justify-content(center);
+        @include flex-direction(row);
+        @include fontSize($font-size-base);
+
+      input[type="text"]{
+        height: 2.8rem;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid grey;
+        background: #f1f1f1;
+      }
+  
+      button[type="submit"]{
+        height: 2.8rem;
+        width: 10%;
+        padding: 10px;
+        background: #2196F3;
+        color: $bg-color;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0b7dda;
+      }
+
+      ::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    }
+  
+}

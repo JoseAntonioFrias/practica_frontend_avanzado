@@ -1,0 +1,77 @@
+@import 'settings';
+
+@mixin for-mobile {
+  @media only screen and (max-width: #{$breakpoint-tablet-portrait}) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait {
+  @media only screen and (min-width: #{$breakpoint-tablet-portrait}) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape {
+  @media only screen and (min-width: #{$breakpoint-tablet-landscape}) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media only screen and (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin if-mobile-landscape {
+	@media (min-width: #{$mobile-landscape-width} + 1) {
+		@content;
+	}
+}
+
+@mixin if-mobile-portrait {
+	@media (max-width: #{$tablet-portrait-width}) {
+		@content;
+	}
+}
+
+@mixin if-mobile {
+	@include if-mobile-portrait {
+		@content;
+	}
+}
+
+@mixin if-tablet-landscape {
+	@media (min-width: #{$tablet-landscape-width}) {
+		@content;
+	}
+}
+
+@mixin if-tablet-portrait {
+	@media (min-width: #{$tablet-portrait-width}) {
+		@content;
+	}
+} 
+
+@mixin if-tablet {
+	@media (min-width: #{$tablet-portrait-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin if-desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin if-tablet-or-desktop {
+	@media screen and (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+
+
+
